@@ -1,0 +1,23 @@
+body {
+  @extend %firasans-400;
+}
+.subtitle-left {
+  font-size: 22px;
+  line-height: 32px;
+  letter-spacing: 7.33333px;
+  color: #fff;
+  text-transform: uppercase;
+  opacity: 0.5;
+  padding-left: 103px;
+  position: relative;
+  display: inline-block;
+  &::before {
+    position: absolute;
+    content: "";
+    width: 80px;
+    height: 1px;
+    background-color: #fff;
+    left: 0;
+    top: 50%;
+  }
+}

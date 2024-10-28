@@ -1,0 +1,198 @@
+.header {
+  height: 100vh;
+  position: relative;
+  &__slider {
+    &-item {
+      height: 100vh;
+      background-image: url("../images/header-bg.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      position: relative;
+    }
+  }
+  &__title {
+    @extend %firasans-800;
+    font-size: 200px;
+    line-height: 156px;
+    text-transform: uppercase;
+    max-width: 467px;
+    opacity: 0.07;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 4;
+  }
+  &__aside {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    border-right: 1px solid rgba($color: #fff, $alpha: 0.25);
+    height: 100vh;
+    text-align: center;
+    color: #fff;
+  }
+  &__search {
+    img {
+      margin: 0 auto;
+      margin-bottom: 20px;
+    }
+  }
+  &__date {
+    @extend %firasans-800;
+    font-size: 72px;
+    line-height: 64px;
+    span {
+      font-size: 16px;
+      line-height: 19px;
+      @extend %firasans-300;
+      display: block;
+      margin-bottom: 30px;
+      margin-top: 5px;
+    }
+  }
+  &__location {
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 1.05px;
+    @extend %firasans-300;
+    position: relative;
+    &::before {
+      position: absolute;
+      content: "";
+      background-image: url("../icons/marker.svg");
+      width: 11px;
+      height: 13px;
+      left: 32px;
+      top: 0;
+    }
+  }
+  &__map {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 3;
+  }
+  &__arrows {
+    position: absolute;
+    left: 210px;
+    bottom: 40px;
+    z-index: 3;
+  }
+}
+
+.menu {
+  padding-top: 50px;
+  &__list {
+    a {
+      img {
+        margin: 0 auto;
+      }
+      span {
+        display: block;
+        font-size: 12px;
+        line-height: 14px;
+        letter-spacing: 3px;
+        @extend %firasans-500;
+        padding-top: 6px;
+        margin-bottom: 30px;
+        color: #fff;
+      }
+    }
+  }
+}
+.slider-item {
+  &__info {
+    position: absolute;
+    right: 80px;
+    bottom: 115px;
+    text-align: right;
+    text-transform: uppercase;
+    color: #fff;
+    &-subtitle {
+      margin-bottom: 5px;
+    }
+    &-title {
+      @extend %firasans-800;
+      font-size: 80px;
+      line-height: 86px;
+
+      margin-bottom: 48px;
+    }
+    &-subtext {
+      margin-bottom: 8px;
+    }
+    &-text {
+      @extend %firasans-800;
+      font-size: 40px;
+      line-height: 46px;
+      color: #fff;
+      margin-bottom: 20px;
+    }
+    &-link {
+      display: inline-block;
+    }
+  }
+}
+.slider-arrows {
+  position: absolute;
+  top: 40px;
+  right: 80px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  z-index: 5;
+  &__prev {
+    right: 170px;
+  }
+  &__next {
+    right: 125px;
+  }
+}
+
+.slider-dots {
+  position: absolute;
+  right: 50px;
+  bottom: 36px;
+  max-width: 920px;
+  width: 100%;
+  color: #fff;
+  .slick-current {
+    .dots-box {
+      border-top: 4px solid $green;
+    }
+  }
+}
+
+.dots-box {
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 28px;
+  border-top: 4px solid #fff;
+  padding-top: 6px;
+  &__number {
+    font-size: 24px;
+    line-height: 34px;
+    @extend %firasans-800;
+  }
+  &__name {
+    font-size: 16px;
+    line-height: 19px;
+    @extend %firasans-300;
+  }
+}
+
+.line-animation {
+  stroke-dashoffset: 600;
+  stroke-dasharray: 600;
+  animation: animdash 6s infinite 6s;
+}
+@keyframes animdash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
