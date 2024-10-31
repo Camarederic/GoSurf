@@ -15,10 +15,8 @@
     @extend %firasans-800;
     font-size: 200px;
     line-height: 156px;
-    text-transform: uppercase;
     max-width: 467px;
     opacity: 0.07;
-    color: #fff;
     position: absolute;
     top: 0;
     left: 0;
@@ -32,7 +30,6 @@
     border-right: 1px solid rgba($color: #fff, $alpha: 0.25);
     height: 100vh;
     text-align: center;
-    color: #fff;
   }
   &__search {
     img {
@@ -59,6 +56,7 @@
     letter-spacing: 1.05px;
     @extend %firasans-300;
     position: relative;
+    text-transform: capitalize;
     &::before {
       position: absolute;
       content: "";
@@ -98,7 +96,7 @@
         @extend %firasans-500;
         padding-top: 6px;
         margin-bottom: 30px;
-        color: #fff;
+        text-transform: capitalize;
       }
     }
   }
@@ -109,8 +107,6 @@
     right: 80px;
     bottom: 115px;
     text-align: right;
-    text-transform: uppercase;
-    color: #fff;
     &-subtitle {
       margin-bottom: 5px;
     }
@@ -128,7 +124,6 @@
       @extend %firasans-800;
       font-size: 40px;
       line-height: 46px;
-      color: #fff;
       margin-bottom: 20px;
     }
     &-link {
@@ -152,7 +147,7 @@
   }
 }
 
-.slider-dots {
+.slider-dotshead {
   position: absolute;
   right: 50px;
   bottom: 36px;
@@ -183,6 +178,7 @@
     font-size: 16px;
     line-height: 19px;
     @extend %firasans-300;
+    text-transform: capitalize;
   }
 }
 
