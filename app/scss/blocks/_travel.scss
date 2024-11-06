@@ -19,6 +19,7 @@
       margin-top: -260px;
       background-repeat: no-repeat;
       background-position: right center;
+      background-size: contain;
       img {
         padding-left: 24px;
       }
@@ -56,16 +57,21 @@
         @extend %firasans-800;
         padding-left: 40px;
         position: relative;
-        span {
-          position: absolute;
-          left: 106px;
-          top: 30px;
-          font-size: 14px;
-          line-height: 36px;
-          letter-spacing: 5.25px;
-          @extend %firasans-400;
-          color: rgba($color: #fff, $alpha: 0.75);
-        }
+      }
+    }
+  }
+  &-pricing {
+    &__span {
+      position: absolute;
+      left: 106px;
+      top: 30px;
+      font-size: 14px;
+      line-height: 36px;
+      letter-spacing: 5.25px;
+      @extend %firasans-400;
+      color: rgba($color: #fff, $alpha: 0.75);
+      &-night{
+        left: 94px;
       }
     }
   }
@@ -77,7 +83,7 @@
   &__next {
     right: 80px;
   }
-  &__prev{
+  &__prev {
     right: 120px;
   }
 }
