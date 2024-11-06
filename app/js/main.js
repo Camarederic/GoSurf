@@ -29,7 +29,7 @@ $(function () {
     asNavFor: ".surf-slider",
     focusOnSelect: true,
   });
-  $(".holder__slider").slick({
+  $(".holder__slider, .shop__slider").slick({
     prevArrow:
       '<button type="button" class="slider-arrows slider-arrows__prev"><img src="icons/arrow-left.svg" alt=""/></button>',
     nextArrow:
@@ -83,4 +83,9 @@ $(function () {
     $(".nights").val() * $(".summa").data("nights") +
     ($(".guests").val() - 1) * $(".summa").data("guests");
   $(".summa").html("$" + summ);
+
+$(".surfboard-box__circle").on('click', function(){
+  $(this).toggleClass("active");
+})
+
 });

@@ -1,0 +1,20 @@
+.footer {
+  .btn {
+    span {
+      padding: 17px 17px;
+      &::after {
+        display: none;
+      }
+    }
+  }
+  text-align: center;
+  padding: 284px 0 34px;
+  &__copy {
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 1.05px;
+    @extend %firasans-100;
+    margin-top: 27px;
+    color: rgba($color: #fff, $alpha: 0.5);
+  }
+}
